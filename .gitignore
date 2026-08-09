@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated scenarios
+scenarios/
+
+# Generated plots
+plots/
+
+# Generated result files
+results.xlsx
+routes.rou.xml

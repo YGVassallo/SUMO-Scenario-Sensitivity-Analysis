@@ -1,0 +1,33 @@
+{
+    "baseline": {
+        "scenario": "aachen_baseline",
+        "closed_roads": [],
+        "traffic_multiplier": 1,
+        "simulation_time": 900,
+        "routing_algorithm": "fastest"
+        },
+
+    "sim_folder": "C:/Users/yigit/Desktop/BATest/SUMO",
+    "net_file": "C:/Users/yigit/Desktop/Bachelor Arbeit/SUMO/aachen/Aachen_Simulation/aachen.net.xml",
+    "trip_file": "C:/Users/yigit/Desktop/Bachelor Arbeit/SUMO/aachen/Aachen_Simulation/aachen.trips.xml",
+
+    "sampling": {
+        "num_samples": 1,
+        "max_closed_roads": 2
+        },
+
+    "closed_roads": [["13866717","13866717","206121410#2","-206121410#2"],
+        ["104422584#1","-104422584#1"],
+        ["-699087326#0","699087326#0"],
+        ["1001308474","-1001308474"],
+        ["10130716828","-10130716828"],
+        ["709811300#1","-709811300#1"]
+    ],
+
+    "traffic_multiplier": [1.0, 1.2, 0.8],
+    
+    "simulation_time": [900],
+
+    "routing_algorithm":["shortest","fastest"]
+
+}

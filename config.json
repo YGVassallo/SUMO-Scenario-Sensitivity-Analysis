@@ -1,15 +1,15 @@
 {
     "baseline": {
-        "scenario": "aachen_baseline",
+        "scenario": "baseline",
         "closed_roads": [],
         "traffic_multiplier": 1,
         "simulation_time": 900,
         "routing_algorithm": "fastest"
         },
 
-    "sim_folder": "C:/Users/yigit/Desktop/BATest/SUMO",
-    "net_file": "C:/Users/yigit/Desktop/Bachelor Arbeit/SUMO/aachen/Aachen_Simulation/aachen.net.xml",
-    "trip_file": "C:/Users/yigit/Desktop/Bachelor Arbeit/SUMO/aachen/Aachen_Simulation/aachen.trips.xml",
+    "sim_folder": "",
+    "net_file": "",
+    "trip_file": "",
 
     "sampling": {
         "num_samples": 1,

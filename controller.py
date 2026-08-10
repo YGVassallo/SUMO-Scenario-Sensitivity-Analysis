@@ -135,7 +135,7 @@ if "closed_roads" in df.columns:
 df = df.sort_values(by="delta_duration", ascending=False)
 
 
-print("\n===== SCENARIO RESULTS =====\n")
+print("\nSCENARIO RESULTS\n")
 print(df.to_string(index=False))
 
 
@@ -150,7 +150,7 @@ for _, row in bad_scenarios.iterrows():
         if road:
             road_counter[road] += 1
 
-print("\n===== CRITICAL ROADS =====\n")
+print("\nCRITICAL ROADS\n")
 for road, count in road_counter.most_common(10):
     print(f"{road}: {count}")
 
@@ -164,7 +164,7 @@ for _, row in good_scenarios.iterrows():
         if road:
             good_road_counter[road] += 1
 
-print("\n===== BENEFICIAL ROADS =====\n")
+print("\nBENEFICIAL ROADS\n")
 for road, count in good_road_counter.most_common(10):
     print(f"{road}: {count}")
 
@@ -177,7 +177,7 @@ for road, count in road_counter.items():
 for road, count in good_road_counter.items():
     road_score[road] = road_score.get(road, 0) + count
 
-print("\n===== ROAD IMPACT SCORE =====\n")
+print("\nROAD IMPACT SCORE \n")
 for road, score in sorted(road_score.items(), key=lambda x: x[1], reverse=True)[:10]:
     print(f"{road}: {score}")
 
@@ -187,7 +187,7 @@ df.to_excel(output_path, index=False)
 
 print(f"\nResults saved to: {output_path}")
 
-# ===== PLOTS =====
+
 plot_bar(results, "duration_mean")
 plot_bar(results, "waiting_mean")
 plot_bar(results, "time_loss_mean")

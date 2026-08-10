@@ -12,7 +12,6 @@ def generate_sample(config, i):
     sample = {}
     sample["scenario"] = f"scenario_{i}"
 
-    #Closed Roads
     road_groups = config["closed_roads"]
 
     normalized_groups = []
@@ -41,7 +40,6 @@ def generate_sample(config, i):
 
         sample["closed_roads"] = closed_edges
 
-    #traffic multiplier
     traffic = config.get("traffic_multiplier", 1.0)
 
     if isinstance(traffic, list):
@@ -53,7 +51,6 @@ def generate_sample(config, i):
 
     sample["traffic_multiplier"] = traffic
 
-    # simulation time 
     sim_time = config["simulation_time"]
 
     if isinstance(sim_time, list):
@@ -64,7 +61,6 @@ def generate_sample(config, i):
 
     sample["simulation_time"] = sim_time
 
-    #routing
     routing_config = config.get("routing_algorithm", "fastest")
 
     if not isinstance(routing_config, list):
